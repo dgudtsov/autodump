@@ -21,6 +21,7 @@ Autodump is shell script usefull to collect pcap dumps & log files from distribu
 
 ## Configure
 Edit file autodump_v2.cfg:
+
 1. populate AM array with neccessary mOne products and user@hostname, like:
  AM[uag]="root@uag"
 where:  
@@ -73,8 +74,11 @@ Capturing on Pseudo-device that captures on all interfaces
 91  
 ```
 This means tcpdump/tshark is started. Now you can run your test, all traffic is capturing.
+
 4. as soon as you'll done your test, press ENTER. Don't use CTRL-C!
+
 5. now capturing is stopped and files transfer to local PC is started. You'll get all files in folder like 2017_03_06_14_42_53, where the first three numbers are year,month,day and the following ones are hour, minutes and seconds.
+
 6. Enjoy your trace using wireshark tool
 
 ## Advanced Usage
